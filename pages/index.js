@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ReactPageScroller from "react-page-scroller";
+import home_page from "./../components/Home";
 
 const Home = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -18,7 +19,9 @@ const Home = () => {
         onBeforePageScroll={handleBeforePageChange}
         customPageNumber={currentPage}
       >
-        <div>1</div>
+        <div>
+          <home_page />
+        </div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
