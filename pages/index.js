@@ -2,20 +2,17 @@ import { useState } from "react";
 import ReactPageScroller from "react-page-scroller";
 
 const Home = () => {
-  const [currentPage, setCurrentPage] = useState(1)
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const handlePageChange = number => {
-    setCurrentPage(number)
+  const handlePageChange = (number) => {
+    setCurrentPage(number);
   };
 
- const handleBeforePageChange = number => {
+  const handleBeforePageChange = (number) => {
     console.log(number);
   };
-
-
-
   return (
-      <>
+    <>
       <ReactPageScroller
         pageOnChange={handlePageChange}
         onBeforePageScroll={handleBeforePageChange}
@@ -26,9 +23,9 @@ const Home = () => {
         <div>3</div>
         <div>4</div>
         <div>5</div>
-        </ReactPageScroller>
-      </>
-      );
-  }
+      </ReactPageScroller>
+    </>
+  );
+};
 
-  export default Home
+export default Home;

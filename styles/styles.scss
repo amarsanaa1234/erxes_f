@@ -1,7 +1,7 @@
-
 $theme-colors: (
-  "primary": #ff7800
+  "primary": #ff7800,
 );
 @import "~bootstrap/scss/bootstrap";
 
-@import "default"
+@import "default";
+@import "components/header";
