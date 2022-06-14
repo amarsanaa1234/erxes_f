@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 
 const Header = () => {
   return (
-    <Nav>
+    <Nav className="position-stricky">
       <Container className="d-flex justify-content-center">
         <Nav
           activeKey="/home"
