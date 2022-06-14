@@ -44,7 +44,7 @@ const Header = () => {
             </Nav.Link>
           </Nav.Item>
         </Nav>
-        <Nav className="d-flex align-items-center">
+        <Nav className="div d-flex align-items-center">
           <Nav.Item>
             <i className="fa-light fa-magnifying-glass"></i>
           </Nav.Item>

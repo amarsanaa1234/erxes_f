@@ -14,7 +14,7 @@ const Home_page = () => {
             одоогоос 122 жилийн өмнө Япон улс, Токио хотын хөл хөдөлгөөн ихтэй
             Нихонбаши загасны захаас эхэлсэн.
           </div>
-          <div className="d-flex align-items-center">
+          <div className="image_s d-flex align-items-center">
             <div>
               <Img
                 src={"/images/Frame_79.png"}
