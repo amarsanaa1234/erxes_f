@@ -3,8 +3,8 @@ import Img from "next/image";
 // import Image from "react/image";
 const Home_page = () => {
   return (
-    <div>
-      <Container className="position-absolute top-13 start-13">
+    <div className="banner">
+      <Container className="position-absolute top-13 start-13 p-6">
         <div className="introduction d-flex flex-column">
           <div>Yoshinoya-н Товч танилцуулга</div>
           <div className="story text-primary">good easy fast</div>
@@ -29,12 +29,14 @@ const Home_page = () => {
       </Container>
       <div className="vector_image">
         <div className="taco">
-          <Img
-            src={"/images/taco.png"}
-            width={386}
-            height={386}
-            alt="taco food"
-          />
+          <div className="img-wrap">
+            <Img
+              src={"/images/taco.png"}
+              layout="fill"
+              alt="taco food"
+              objectFit="contain"
+            />
+          </div>
         </div>
         <div className="vector1">
           <Img
@@ -53,23 +55,13 @@ const Home_page = () => {
           />
         </div>
         <div className="Frame_1">
-        <Img
-            src={"/images/Frame.png"}
-            width={225}
-            height={55}
-            alt="frame"
-          />
+          <Img src={"/images/Frame.png"} width={225} height={55} alt="frame" />
         </div>
         <div className="Frame_2">
-        <Img
-            src={"/images/Frame1.png"}
-            width={75}
-            height={62}
-            alt="frame"
-          />
+          <Img src={"/images/Frame1.png"} width={75} height={62} alt="frame" />
         </div>
         <div className="Frame_3">
-        <Img
+          <Img
             src={"/images/Frame2.png"}
             width={101}
             height={108}
@@ -77,7 +69,12 @@ const Home_page = () => {
           />
         </div>
       </div>
-      <div></div>
+      <div className="down d-flex flex-column align-items-center position-absolute text-gray">
+        <div>Scroll down</div>
+        <div>
+          <Img src={"/images/down.png"} width={44} height={44} alt="down" />
+        </div>
+      </div>
     </div>
   );
 };

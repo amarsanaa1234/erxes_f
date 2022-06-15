@@ -5,9 +5,7 @@ import "../styles/styles.scss";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <>
-        <Header />
-      </>
+      <Header />
       <Component {...pageProps} />
     </>
   );

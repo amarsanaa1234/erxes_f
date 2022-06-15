@@ -1,5 +1,6 @@
 $theme-colors: (
   "primary": #ff7800,
+  "gray": #9e9c9a,
 );
 $position-values: (
   13: 13%,
@@ -14,9 +15,31 @@ $position-values: (
   90: 90%,
   100: 100%,
 );
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.15,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 5,
+);
+
+$values: (
+  15: 15%,
+  25: 25%,
+  30: 30%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+);
 
 @import "~bootstrap/scss/bootstrap";
 
 @import "default";
 @import "components/header";
 @import "components/home_page";
+@import "components/products";
+@import "components/slider";
