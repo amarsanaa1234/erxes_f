@@ -3,8 +3,8 @@ import Img from "next/image";
 // import Image from "react/image";
 const Home_page = () => {
   return (
-    <div className="banner">
-      <Container className="position-absolute top-13 start-13 p-6">
+    <div className="banner d-flex align-items-center justify-content-evenly">
+      <Container className="pos">
         <div className="introduction d-flex flex-column">
           <div>Yoshinoya-н Товч танилцуулга</div>
           <div className="story text-primary">good easy fast</div>
@@ -67,12 +67,6 @@ const Home_page = () => {
             height={108}
             alt="frame"
           />
-        </div>
-      </div>
-      <div className="down d-flex flex-column align-items-center position-absolute text-gray">
-        <div>Scroll down</div>
-        <div>
-          <Img src={"/images/down.png"} width={44} height={44} alt="down" />
         </div>
       </div>
     </div>

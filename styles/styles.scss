@@ -1,6 +1,8 @@
 $theme-colors: (
   "primary": #ff7800,
   "gray": #9e9c9a,
+  "orange": #ffae66,
+  "white": #fff,
 );
 $position-values: (
   13: 13%,
@@ -43,3 +45,4 @@ $values: (
 @import "components/home_page";
 @import "components/products";
 @import "components/slider";
+@import "components/history";

@@ -1,6 +1,6 @@
 import React from "react";
 import Img from "next/image";
-import { Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import Slider from "react-slick";
 
 const Slideshow = () => {
@@ -15,41 +15,208 @@ const Slideshow = () => {
   };
   //Array of Images
   return (
-    <Container className="d-flex justify-content-around">
-      <div className="bg-gray">
-        <div>Бүтээгдэхүүн</div>
-        <div>Хамгийн сайн амт чанарыг санал болгоно</div>
-        <div>Бүх хоол харах</div>
+    <Container className="d-flex">
+      <div className="products">
+        <div className="product_title d-flex justify-content-center bg-orange p-2 my-2">
+          Бүтээгдэхүүн
+        </div>
+        <div className="product_doc d-flex justify-content-center">
+          Хамгийн сайн амт чанарыг санал болгоно
+        </div>
+        <Button className="product_btn border-orange bg-white">
+          Бүх хоол харах
+        </Button>
       </div>
       <div>
-        <Slider className="product_slider bg-primary" {...settings}>
-          <div>
-            <h3>1</h3>
-            {/* <Img src={images/} */}
+        <Slider className="product_slider" {...settings}>
+          <div className="frame">
+            <div className="side-slide shadow bg-body rounded">
+              <div className="side-title bg-primary d-flex align-items-center justify-content-center">
+                1000 Yoshi.P1
+              </div>
+              <div className="slide-images d-flex justify-content-center align-items-center">
+                <Img
+                  src={"/images/Frame3.png"}
+                  width={233}
+                  height={196}
+                  alt="hool"
+                />
+              </div>
+              <Container className="fw-bold pf-3 pr-3">Gyudon</Container>
+              <Container className="slide-document pf-3 pr-3">
+                Yoshinoya-н хамгийн алдартай хоол нь Gyudon ( 牛丼) (beef bowl)
+                буюу Үхрийн махны боул юм.
+              </Container>
+              <Container className="slide-price">Үнэ: 8900₮</Container>
+            </div>
           </div>
-          <div>
-            <h3>2</h3>
+          <div className="frame">
+            <div className="side-slide shadow bg-body rounded">
+              <div className="side-title bg-primary d-flex align-items-center justify-content-center">
+                1000 Yoshi.P1
+              </div>
+              <div className="slide-images d-flex justify-content-center align-items-center">
+                <Img
+                  src={"/images/Frame3.png"}
+                  width={233}
+                  height={196}
+                  alt="hool"
+                />
+              </div>
+              <Container className="fw-bold pf-3 pr-3">Gyudon</Container>
+              <Container className="slide-document pf-3 pr-3">
+                Yoshinoya-н хамгийн алдартай хоол нь Gyudon ( 牛丼) (beef bowl)
+                буюу Үхрийн махны боул юм.
+              </Container>
+              <Container className="slide-price">Үнэ: 8900₮</Container>
+            </div>
           </div>
-          <div>
-            <h3>3</h3>
+          <div className="frame">
+            <div className="side-slide shadow bg-body rounded">
+              <div className="side-title bg-primary d-flex align-items-center justify-content-center">
+                1000 Yoshi.P1
+              </div>
+              <div className="slide-images d-flex justify-content-center align-items-center">
+                <Img
+                  src={"/images/Frame3.png"}
+                  width={233}
+                  height={196}
+                  alt="hool"
+                />
+              </div>
+              <Container className="fw-bold pf-3 pr-3">Gyudon</Container>
+              <Container className="slide-document pf-3 pr-3">
+                Yoshinoya-н хамгийн алдартай хоол нь Gyudon ( 牛丼) (beef bowl)
+                буюу Үхрийн махны боул юм.
+              </Container>
+              <Container className="slide-price">Үнэ: 8900₮</Container>
+            </div>
           </div>
-          <div>
-            <h3>4</h3>
+          <div className="frame">
+            <div className="side-slide shadow bg-body rounded">
+              <div className="side-title bg-primary d-flex align-items-center justify-content-center">
+                1000 Yoshi.P1
+              </div>
+              <div className="slide-images d-flex justify-content-center align-items-center">
+                <Img
+                  src={"/images/Frame3.png"}
+                  width={233}
+                  height={196}
+                  alt="hool"
+                />
+              </div>
+              <Container className="fw-bold pf-3 pr-3">Gyudon</Container>
+              <Container className="slide-document pf-3 pr-3">
+                Yoshinoya-н хамгийн алдартай хоол нь Gyudon ( 牛丼) (beef bowl)
+                буюу Үхрийн махны боул юм.
+              </Container>
+              <Container className="slide-price">Үнэ: 8900₮</Container>
+            </div>
           </div>
-          <div>
-            <h3>5</h3>
+          <div className="frame">
+            <div className="side-slide shadow bg-body rounded">
+              <div className="side-title bg-primary d-flex align-items-center justify-content-center">
+                1000 Yoshi.P1
+              </div>
+              <div className="slide-images d-flex justify-content-center align-items-center">
+                <Img
+                  src={"/images/Frame3.png"}
+                  width={233}
+                  height={196}
+                  alt="hool"
+                />
+              </div>
+              <Container className="fw-bold pf-3 pr-3">Gyudon</Container>
+              <Container className="slide-document pf-3 pr-3">
+                Yoshinoya-н хамгийн алдартай хоол нь Gyudon ( 牛丼) (beef bowl)
+                буюу Үхрийн махны боул юм.
+              </Container>
+              <Container className="slide-price">Үнэ: 8900₮</Container>
+            </div>
           </div>
-          <div>
-            <h3>6</h3>
+          <div className="frame">
+            <div className="side-slide shadow bg-body rounded">
+              <div className="side-title bg-primary d-flex align-items-center justify-content-center">
+                1000 Yoshi.P1
+              </div>
+              <div className="slide-images d-flex justify-content-center align-items-center">
+                <Img
+                  src={"/images/Frame3.png"}
+                  width={233}
+                  height={196}
+                  alt="hool"
+                />
+              </div>
+              <Container className="fw-bold pf-3 pr-3">Gyudon</Container>
+              <Container className="slide-document pf-3 pr-3">
+                Yoshinoya-н хамгийн алдартай хоол нь Gyudon ( 牛丼) (beef bowl)
+                буюу Үхрийн махны боул юм.
+              </Container>
+              <Container className="slide-price">Үнэ: 8900₮</Container>
+            </div>
           </div>
-          <div>
-            <h3>7</h3>
+          <div className="frame">
+            <div className="side-slide shadow bg-body rounded">
+              <div className="side-title bg-primary d-flex align-items-center justify-content-center">
+                1000 Yoshi.P1
+              </div>
+              <div className="slide-images d-flex justify-content-center align-items-center">
+                <Img
+                  src={"/images/Frame3.png"}
+                  width={233}
+                  height={196}
+                  alt="hool"
+                />
+              </div>
+              <Container className="fw-bold pf-3 pr-3">Gyudon</Container>
+              <Container className="slide-document pf-3 pr-3">
+                Yoshinoya-н хамгийн алдартай хоол нь Gyudon ( 牛丼) (beef bowl)
+                буюу Үхрийн махны боул юм.
+              </Container>
+              <Container className="slide-price">Үнэ: 8900₮</Container>
+            </div>
           </div>
-          <div>
-            <h3>8</h3>
+          <div className="frame">
+            <div className="side-slide shadow bg-body rounded">
+              <div className="side-title bg-primary d-flex align-items-center justify-content-center">
+                1000 Yoshi.P1
+              </div>
+              <div className="slide-images d-flex justify-content-center align-items-center">
+                <Img
+                  src={"/images/Frame3.png"}
+                  width={233}
+                  height={196}
+                  alt="hool"
+                />
+              </div>
+              <Container className="fw-bold pf-3 pr-3">Gyudon</Container>
+              <Container className="slide-document pf-3 pr-3">
+                Yoshinoya-н хамгийн алдартай хоол нь Gyudon ( 牛丼) (beef bowl)
+                буюу Үхрийн махны боул юм.
+              </Container>
+              <Container className="slide-price">Үнэ: 8900₮</Container>
+            </div>
           </div>
-          <div>
-            <h3>9</h3>
+          <div className="frame">
+            <div className="side-slide shadow bg-body rounded">
+              <div className="side-title bg-primary d-flex align-items-center justify-content-center">
+                1000 Yoshi.P1
+              </div>
+              <div className="slide-images d-flex justify-content-center align-items-center">
+                <Img
+                  src={"/images/Frame3.png"}
+                  width={233}
+                  height={196}
+                  alt="hool"
+                />
+              </div>
+              <Container className="fw-bold pf-3 pr-3">Gyudon</Container>
+              <Container className="slide-document pf-3 pr-3">
+                Yoshinoya-н хамгийн алдартай хоол нь Gyudon ( 牛丼) (beef bowl)
+                буюу Үхрийн махны боул юм.
+              </Container>
+              <Container className="slide-price">Үнэ: 8900₮</Container>
+            </div>
           </div>
         </Slider>
       </div>

@@ -1,5 +1,5 @@
-.position-absolute.top-13.start-13 {
-  width: 35%;
+.pos {
+  margin-left: 10%;
 }
 .introduction {
   font-size: 58px;
@@ -14,6 +14,10 @@
 .play_video {
   margin-left: 10px;
   font-size: 14px;
+}
+.vector_image {
+  width: 60%;
+  height: 60%;
 }
 .taco {
   position: absolute;
@@ -56,10 +60,31 @@
   overflow: hidden;
   padding: 80px 0;
 }
-.radient {
-  position: absolute;
-  top: 70%;
-  left: 10%;
+.page-layout {
+  position: relative;
+  .radient {
+    position: absolute;
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #ff7800 0%,
+      rgba(255, 120, 0, 0) 100%
+    );
+    opacity: 0.3;
+    filter: blur(40px);
+    height: 40vw;
+    width: 40vw;
+    top: 0%;
+    right: 0%;
+  }
+  .scroll_down {
+    top: 90%;
+    left: 10%;
+    .scroll_icon {
+      background-image: url("./../../public/images/down.png");
+      width: 44px;
+      height: 44px;
+    }
+  }
 }
 .banner {
   .taco {
